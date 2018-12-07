@@ -1,9 +1,18 @@
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#server:
+#  port: 8762
+#spring:
+#  application:
+#    name: eurakaclient
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka:8761/eureka/ # 这个需要改为eureka-server
 server:
-  port: 8762
+  port: 8763
 spring:
   application:
     name: eurakaclient
